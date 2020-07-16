@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "editerSubtitlemenuDel.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "editerSubtitlemenuDel@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "editerSubtitlemenuDel@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "editerTimelineBtnClipHandleLeftSel.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "editerTimelineBtnClipHandleLeftSel@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "editerTimelineBtnClipHandleLeftSel@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

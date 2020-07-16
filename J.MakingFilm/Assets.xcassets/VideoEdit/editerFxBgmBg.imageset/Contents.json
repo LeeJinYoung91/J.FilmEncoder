@@ -1,0 +1,56 @@
+{
+  "images" : [
+    {
+      "filename" : "editerFxBgmBg.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "left" : 29,
+          "right" : 33
+        },
+        "center" : {
+          "mode" : "stretch",
+          "width" : 1
+        },
+        "mode" : "3-part-horizontal"
+      },
+      "scale" : "1x"
+    },
+    {
+      "filename" : "editerFxBgmBg@2x.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "left" : 65,
+          "right" : 70
+        },
+        "center" : {
+          "mode" : "stretch",
+          "width" : 1
+        },
+        "mode" : "3-part-horizontal"
+      },
+      "scale" : "2x"
+    },
+    {
+      "filename" : "editerFxBgmBg@3x.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "left" : 85,
+          "right" : 87
+        },
+        "center" : {
+          "mode" : "stretch",
+          "width" : 1
+        },
+        "mode" : "3-part-horizontal"
+      },
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

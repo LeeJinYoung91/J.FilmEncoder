@@ -1,0 +1,14 @@
+disable_rules:
+    - line_length
+    - colon
+    - comma
+    - control_statement
+included:
+- UnityExportPath/Classes/*
+- UnityExportPath/Classes/Unity/*
+- UnityExportPath/Classes/UI/*
+- UnityExportPath/Classes/UnityAds/*
+- UnityExportPath/Classes/Native/*
+- UnityExportPath/Libraries
+excluded:
+- Pods

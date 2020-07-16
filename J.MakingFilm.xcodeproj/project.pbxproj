@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10F20D3D2498AB9C004BEBFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D3C2498AB9C004BEBFD /* AppDelegate.swift */; };
+		10F20D3F2498AB9C004BEBFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D3E2498AB9C004BEBFD /* SceneDelegate.swift */; };
+		10F20D442498AB9C004BEBFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F20D422498AB9C004BEBFD /* Main.storyboard */; };
+		10F20D462498ABA0004BEBFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10F20D452498ABA0004BEBFD /* Assets.xcassets */; };
+		10F20D492498ABA0004BEBFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F20D472498ABA0004BEBFD /* LaunchScreen.storyboard */; };
+		10F20D912498AC63004BEBFD /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D512498AC63004BEBFD /* ViewExtension.swift */; };
+		10F20D932498AC63004BEBFD /* OneFingerRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D552498AC63004BEBFD /* OneFingerRotationGestureRecognizer.m */; };
+		10F20D942498AC63004BEBFD /* SAVideoRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D572498AC63004BEBFD /* SAVideoRangeSlider.m */; };
+		10F20D952498AC63004BEBFD /* SASliderLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D592498AC63004BEBFD /* SASliderLeft.m */; };
+		10F20D962498AC63004BEBFD /* SAResizibleBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D5A2498AC63004BEBFD /* SAResizibleBubble.m */; };
+		10F20D972498AC63004BEBFD /* SASliderRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D5C2498AC63004BEBFD /* SASliderRight.m */; };
+		10F20D982498AC63004BEBFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 10F20D5F2498AC63004BEBFD /* .swiftlint.yml */; };
+		10F20D992498AC63004BEBFD /* KnobRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D622498AC63004BEBFD /* KnobRenderer.swift */; };
+		10F20D9A2498AC63004BEBFD /* RoundingGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D632498AC63004BEBFD /* RoundingGestureRecognizer.swift */; };
+		10F20D9B2498AC63004BEBFD /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D642498AC63004BEBFD /* Knob.swift */; };
+		10F20D9C2498AC63004BEBFD /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D662498AC63004BEBFD /* RangeSlider.swift */; };
+		10F20D9D2498AC63004BEBFD /* cloudy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10F20D692498AC63004BEBFD /* cloudy.mp3 */; };
+		10F20D9E2498AC63004BEBFD /* uplink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10F20D6A2498AC63004BEBFD /* uplink.mp3 */; };
+		10F20DA22498AC63004BEBFD /* PickerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D712498AC63004BEBFD /* PickerListCell.swift */; };
+		10F20DA32498AC63004BEBFD /* SelectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D722498AC63004BEBFD /* SelectorDelegate.swift */; };
+		10F20DA52498AC63004BEBFD /* PickerItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D742498AC63004BEBFD /* PickerItemCell.swift */; };
+		10F20DA62498AC63004BEBFD /* VideoManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D752498AC63004BEBFD /* VideoManagement.swift */; };
+		10F20DA72498AC63004BEBFD /* FilterEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D762498AC63004BEBFD /* FilterEffect.swift */; };
+		10F20DA82498AC63004BEBFD /* AvassetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D772498AC63004BEBFD /* AvassetExtension.swift */; };
+		10F20DA92498AC63004BEBFD /* VideoThumbnailCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D782498AC63004BEBFD /* VideoThumbnailCreator.swift */; };
+		10F20DAA2498AC63004BEBFD /* EncodeDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10F20D7B2498AC63004BEBFD /* EncodeDataView.xib */; };
+		10F20DAB2498AC63004BEBFD /* EncodeDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D7C2498AC63004BEBFD /* EncodeDataView.swift */; };
+		10F20DAD2498AC63004BEBFD /* EditModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D7F2498AC63004BEBFD /* EditModeView.swift */; };
+		10F20DAE2498AC63004BEBFD /* EditModeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10F20D802498AC63004BEBFD /* EditModeView.xib */; };
+		10F20DAF2498AC63004BEBFD /* VideoEncodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D812498AC63004BEBFD /* VideoEncodingOptions.swift */; };
+		10F20DB02498AC63004BEBFD /* EditorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D822498AC63004BEBFD /* EditorHelper.swift */; };
+		10F20DB12498AC63004BEBFD /* VideoViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D832498AC63004BEBFD /* VideoViewPresenter.swift */; };
+		10F20DB22498AC63004BEBFD /* VideoFilterUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D842498AC63004BEBFD /* VideoFilterUtility.swift */; };
+		10F20DB32498AC63004BEBFD /* TimelineIndicatorCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D862498AC63004BEBFD /* TimelineIndicatorCollectionView.swift */; };
+		10F20DB62498AC63004BEBFD /* TitleInputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D8A2498AC63004BEBFD /* TitleInputTextField.swift */; };
+		10F20DB72498AC63004BEBFD /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D8B2498AC63004BEBFD /* IndicatorCell.swift */; };
+		10F20DB82498AC63004BEBFD /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D8C2498AC63004BEBFD /* SelectionView.swift */; };
+		10F20DB92498AC63004BEBFD /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D8D2498AC63004BEBFD /* VideoView.swift */; };
+		10F20DBA2498AC63004BEBFD /* MenuSelectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D8E2498AC63004BEBFD /* MenuSelectorDelegate.swift */; };
+		10F20DBB2498AC63004BEBFD /* VideoUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D8F2498AC63004BEBFD /* VideoUtility.swift */; };
+		10F20DBD2498ACBF004BEBFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F20DBC2498ACBF004BEBFD /* UIKit.framework */; };
+		10F20DBF2498ACC4004BEBFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F20DBE2498ACC4004BEBFD /* AVFoundation.framework */; };
+		10F20DC12498ACC8004BEBFD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F20DC02498ACC8004BEBFD /* AVKit.framework */; };
+		10F20DC42498AD6D004BEBFD /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20DC32498AD6D004BEBFD /* Define.swift */; };
+		10F20DC82498B4C9004BEBFD /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D732498AC63004BEBFD /* PickerViewController.swift */; };
+		10F20DC92498B4D4004BEBFD /* VideoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20D7D2498AC63004BEBFD /* VideoEditorViewController.swift */; };
+		81B9731C9FD695263FFED809 /* Pods_J_MakingFilm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574EC61556FA9609D0F9AE49 /* Pods_J_MakingFilm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10F20D392498AB9C004BEBFD /* J.MakingFilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J.MakingFilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10F20D3C2498AB9C004BEBFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10F20D3E2498AB9C004BEBFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		10F20D432498AB9C004BEBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10F20D452498ABA0004BEBFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10F20D482498ABA0004BEBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10F20D4A2498ABA0004BEBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F20D512498AC63004BEBFD /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		10F20D552498AC63004BEBFD /* OneFingerRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneFingerRotationGestureRecognizer.m; sourceTree = "<group>"; };
+		10F20D572498AC63004BEBFD /* SAVideoRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAVideoRangeSlider.m; sourceTree = "<group>"; };
+		10F20D582498AC63004BEBFD /* SASliderRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASliderRight.h; sourceTree = "<group>"; };
+		10F20D592498AC63004BEBFD /* SASliderLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASliderLeft.m; sourceTree = "<group>"; };
+		10F20D5A2498AC63004BEBFD /* SAResizibleBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAResizibleBubble.m; sourceTree = "<group>"; };
+		10F20D5B2498AC63004BEBFD /* SAVideoRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAVideoRangeSlider.h; sourceTree = "<group>"; };
+		10F20D5C2498AC63004BEBFD /* SASliderRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASliderRight.m; sourceTree = "<group>"; };
+		10F20D5D2498AC63004BEBFD /* SASliderLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASliderLeft.h; sourceTree = "<group>"; };
+		10F20D5E2498AC63004BEBFD /* SAResizibleBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAResizibleBubble.h; sourceTree = "<group>"; };
+		10F20D5F2498AC63004BEBFD /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		10F20D602498AC63004BEBFD /* OneFingerRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneFingerRotationGestureRecognizer.h; sourceTree = "<group>"; };
+		10F20D622498AC63004BEBFD /* KnobRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnobRenderer.swift; sourceTree = "<group>"; };
+		10F20D632498AC63004BEBFD /* RoundingGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundingGestureRecognizer.swift; sourceTree = "<group>"; };
+		10F20D642498AC63004BEBFD /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		10F20D662498AC63004BEBFD /* RangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		10F20D692498AC63004BEBFD /* cloudy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cloudy.mp3; sourceTree = "<group>"; };
+		10F20D6A2498AC63004BEBFD /* uplink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = uplink.mp3; sourceTree = "<group>"; };
+		10F20D712498AC63004BEBFD /* PickerListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerListCell.swift; sourceTree = "<group>"; };
+		10F20D722498AC63004BEBFD /* SelectorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorDelegate.swift; sourceTree = "<group>"; };
+		10F20D732498AC63004BEBFD /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		10F20D742498AC63004BEBFD /* PickerItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerItemCell.swift; sourceTree = "<group>"; };
+		10F20D752498AC63004BEBFD /* VideoManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoManagement.swift; sourceTree = "<group>"; };
+		10F20D762498AC63004BEBFD /* FilterEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterEffect.swift; sourceTree = "<group>"; };
+		10F20D772498AC63004BEBFD /* AvassetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvassetExtension.swift; sourceTree = "<group>"; };
+		10F20D782498AC63004BEBFD /* VideoThumbnailCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoThumbnailCreator.swift; sourceTree = "<group>"; };
+		10F20D7B2498AC63004BEBFD /* EncodeDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EncodeDataView.xib; sourceTree = "<group>"; };
+		10F20D7C2498AC63004BEBFD /* EncodeDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodeDataView.swift; sourceTree = "<group>"; };
+		10F20D7D2498AC63004BEBFD /* VideoEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEditorViewController.swift; sourceTree = "<group>"; };
+		10F20D7F2498AC63004BEBFD /* EditModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditModeView.swift; sourceTree = "<group>"; };
+		10F20D802498AC63004BEBFD /* EditModeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditModeView.xib; sourceTree = "<group>"; };
+		10F20D812498AC63004BEBFD /* VideoEncodingOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEncodingOptions.swift; sourceTree = "<group>"; };
+		10F20D822498AC63004BEBFD /* EditorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorHelper.swift; sourceTree = "<group>"; };
+		10F20D832498AC63004BEBFD /* VideoViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewPresenter.swift; sourceTree = "<group>"; };
+		10F20D842498AC63004BEBFD /* VideoFilterUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFilterUtility.swift; sourceTree = "<group>"; };
+		10F20D862498AC63004BEBFD /* TimelineIndicatorCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineIndicatorCollectionView.swift; sourceTree = "<group>"; };
+		10F20D8A2498AC63004BEBFD /* TitleInputTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleInputTextField.swift; sourceTree = "<group>"; };
+		10F20D8B2498AC63004BEBFD /* IndicatorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
+		10F20D8C2498AC63004BEBFD /* SelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		10F20D8D2498AC63004BEBFD /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		10F20D8E2498AC63004BEBFD /* MenuSelectorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSelectorDelegate.swift; sourceTree = "<group>"; };
+		10F20D8F2498AC63004BEBFD /* VideoUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoUtility.swift; sourceTree = "<group>"; };
+		10F20DBC2498ACBF004BEBFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		10F20DBE2498ACC4004BEBFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		10F20DC02498ACC8004BEBFD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		10F20DC32498AD6D004BEBFD /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		3953B198FFD3EAE4DE008053 /* Pods-J.MakingFilm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.MakingFilm.debug.xcconfig"; path = "Target Support Files/Pods-J.MakingFilm/Pods-J.MakingFilm.debug.xcconfig"; sourceTree = "<group>"; };
+		574EC61556FA9609D0F9AE49 /* Pods_J_MakingFilm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_J_MakingFilm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6A268CD3B6EE250378A092 /* Pods-J.MakingFilm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.MakingFilm.release.xcconfig"; path = "Target Support Files/Pods-J.MakingFilm/Pods-J.MakingFilm.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10F20D362498AB9C004BEBFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B9731C9FD695263FFED809 /* Pods_J_MakingFilm.framework in Frameworks */,
+				10F20DBD2498ACBF004BEBFD /* UIKit.framework in Frameworks */,
+				10F20DC12498ACC8004BEBFD /* AVKit.framework in Frameworks */,
+				10F20DBF2498ACC4004BEBFD /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10F20D302498AB9C004BEBFD = {
+			isa = PBXGroup;
+			children = (
+				10F20D3B2498AB9C004BEBFD /* J.MakingFilm */,
+				10F20D3A2498AB9C004BEBFD /* Products */,
+				89D39C4CA6C1C6FBD2A39B6B /* Pods */,
+				E584419160D8ABF5860EED45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		10F20D3A2498AB9C004BEBFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D392498AB9C004BEBFD /* J.MakingFilm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10F20D3B2498AB9C004BEBFD /* J.MakingFilm */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D3C2498AB9C004BEBFD /* AppDelegate.swift */,
+				10F20D3E2498AB9C004BEBFD /* SceneDelegate.swift */,
+				10F20D422498AB9C004BEBFD /* Main.storyboard */,
+				10F20D452498ABA0004BEBFD /* Assets.xcassets */,
+				10F20D472498ABA0004BEBFD /* LaunchScreen.storyboard */,
+				10F20D4A2498ABA0004BEBFD /* Info.plist */,
+				10F20DC22498AD6D004BEBFD /* Constants */,
+				10F20D502498AC63004BEBFD /* Extension */,
+				10F20D672498AC63004BEBFD /* Resources */,
+				10F20D542498AC63004BEBFD /* Util */,
+				10F20D6F2498AC63004BEBFD /* VideoEditor */,
+			);
+			path = J.MakingFilm;
+			sourceTree = "<group>";
+		};
+		10F20D502498AC63004BEBFD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D512498AC63004BEBFD /* ViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		10F20D542498AC63004BEBFD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D552498AC63004BEBFD /* OneFingerRotationGestureRecognizer.m */,
+				10F20D562498AC63004BEBFD /* SAVideoRangeSlider */,
+				10F20D5F2498AC63004BEBFD /* .swiftlint.yml */,
+				10F20D602498AC63004BEBFD /* OneFingerRotationGestureRecognizer.h */,
+				10F20D612498AC63004BEBFD /* Knob */,
+				10F20D652498AC63004BEBFD /* VideoSlider */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		10F20D562498AC63004BEBFD /* SAVideoRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D572498AC63004BEBFD /* SAVideoRangeSlider.m */,
+				10F20D582498AC63004BEBFD /* SASliderRight.h */,
+				10F20D592498AC63004BEBFD /* SASliderLeft.m */,
+				10F20D5A2498AC63004BEBFD /* SAResizibleBubble.m */,
+				10F20D5B2498AC63004BEBFD /* SAVideoRangeSlider.h */,
+				10F20D5C2498AC63004BEBFD /* SASliderRight.m */,
+				10F20D5D2498AC63004BEBFD /* SASliderLeft.h */,
+				10F20D5E2498AC63004BEBFD /* SAResizibleBubble.h */,
+			);
+			path = SAVideoRangeSlider;
+			sourceTree = "<group>";
+		};
+		10F20D612498AC63004BEBFD /* Knob */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D622498AC63004BEBFD /* KnobRenderer.swift */,
+				10F20D632498AC63004BEBFD /* RoundingGestureRecognizer.swift */,
+				10F20D642498AC63004BEBFD /* Knob.swift */,
+			);
+			path = Knob;
+			sourceTree = "<group>";
+		};
+		10F20D652498AC63004BEBFD /* VideoSlider */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D662498AC63004BEBFD /* RangeSlider.swift */,
+			);
+			path = VideoSlider;
+			sourceTree = "<group>";
+		};
+		10F20D672498AC63004BEBFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D682498AC63004BEBFD /* BGM */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		10F20D682498AC63004BEBFD /* BGM */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D692498AC63004BEBFD /* cloudy.mp3 */,
+				10F20D6A2498AC63004BEBFD /* uplink.mp3 */,
+			);
+			path = BGM;
+			sourceTree = "<group>";
+		};
+		10F20D6F2498AC63004BEBFD /* VideoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D702498AC63004BEBFD /* VideoManagement */,
+				10F20D762498AC63004BEBFD /* FilterEffect.swift */,
+				10F20D772498AC63004BEBFD /* AvassetExtension.swift */,
+				10F20D782498AC63004BEBFD /* VideoThumbnailCreator.swift */,
+				10F20D792498AC63004BEBFD /* Edit */,
+				10F20D822498AC63004BEBFD /* EditorHelper.swift */,
+				10F20D832498AC63004BEBFD /* VideoViewPresenter.swift */,
+				10F20D842498AC63004BEBFD /* VideoFilterUtility.swift */,
+				10F20D852498AC63004BEBFD /* View */,
+				10F20D8F2498AC63004BEBFD /* VideoUtility.swift */,
+			);
+			path = VideoEditor;
+			sourceTree = "<group>";
+		};
+		10F20D702498AC63004BEBFD /* VideoManagement */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D712498AC63004BEBFD /* PickerListCell.swift */,
+				10F20D722498AC63004BEBFD /* SelectorDelegate.swift */,
+				10F20D732498AC63004BEBFD /* PickerViewController.swift */,
+				10F20D742498AC63004BEBFD /* PickerItemCell.swift */,
+				10F20D752498AC63004BEBFD /* VideoManagement.swift */,
+			);
+			path = VideoManagement;
+			sourceTree = "<group>";
+		};
+		10F20D792498AC63004BEBFD /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D7A2498AC63004BEBFD /* EncodeDataView */,
+				10F20D7D2498AC63004BEBFD /* VideoEditorViewController.swift */,
+				10F20D7E2498AC63004BEBFD /* SelectionViewEditMode */,
+				10F20D812498AC63004BEBFD /* VideoEncodingOptions.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		10F20D7A2498AC63004BEBFD /* EncodeDataView */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D7B2498AC63004BEBFD /* EncodeDataView.xib */,
+				10F20D7C2498AC63004BEBFD /* EncodeDataView.swift */,
+			);
+			path = EncodeDataView;
+			sourceTree = "<group>";
+		};
+		10F20D7E2498AC63004BEBFD /* SelectionViewEditMode */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D7F2498AC63004BEBFD /* EditModeView.swift */,
+				10F20D802498AC63004BEBFD /* EditModeView.xib */,
+			);
+			path = SelectionViewEditMode;
+			sourceTree = "<group>";
+		};
+		10F20D852498AC63004BEBFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D862498AC63004BEBFD /* TimelineIndicatorCollectionView.swift */,
+				10F20D872498AC63004BEBFD /* InputView */,
+				10F20D8B2498AC63004BEBFD /* IndicatorCell.swift */,
+				10F20D8C2498AC63004BEBFD /* SelectionView.swift */,
+				10F20D8D2498AC63004BEBFD /* VideoView.swift */,
+				10F20D8E2498AC63004BEBFD /* MenuSelectorDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10F20D872498AC63004BEBFD /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				10F20D8A2498AC63004BEBFD /* TitleInputTextField.swift */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		10F20DC22498AD6D004BEBFD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				10F20DC32498AD6D004BEBFD /* Define.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		89D39C4CA6C1C6FBD2A39B6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3953B198FFD3EAE4DE008053 /* Pods-J.MakingFilm.debug.xcconfig */,
+				7A6A268CD3B6EE250378A092 /* Pods-J.MakingFilm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E584419160D8ABF5860EED45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10F20DC02498ACC8004BEBFD /* AVKit.framework */,
+				10F20DBE2498ACC4004BEBFD /* AVFoundation.framework */,
+				10F20DBC2498ACBF004BEBFD /* UIKit.framework */,
+				574EC61556FA9609D0F9AE49 /* Pods_J_MakingFilm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10F20D382498AB9C004BEBFD /* J.MakingFilm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10F20D4D2498ABA0004BEBFD /* Build configuration list for PBXNativeTarget "J.MakingFilm" */;
+			buildPhases = (
+				DE7B228DB53DDA3E6306DF52 /* [CP] Check Pods Manifest.lock */,
+				10F20D352498AB9C004BEBFD /* Sources */,
+				10F20D362498AB9C004BEBFD /* Frameworks */,
+				10F20D372498AB9C004BEBFD /* Resources */,
+				013650DA01B1E6895506F6F2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = J.MakingFilm;
+			productName = J.MakingFilm;
+			productReference = 10F20D392498AB9C004BEBFD /* J.MakingFilm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10F20D312498AB9C004BEBFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "JinYoung Lee";
+				TargetAttributes = {
+					10F20D382498AB9C004BEBFD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 10F20D342498AB9C004BEBFD /* Build configuration list for PBXProject "J.MakingFilm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10F20D302498AB9C004BEBFD;
+			productRefGroup = 10F20D3A2498AB9C004BEBFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10F20D382498AB9C004BEBFD /* J.MakingFilm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10F20D372498AB9C004BEBFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F20D982498AC63004BEBFD /* .swiftlint.yml in Resources */,
+				10F20D492498ABA0004BEBFD /* LaunchScreen.storyboard in Resources */,
+				10F20D462498ABA0004BEBFD /* Assets.xcassets in Resources */,
+				10F20D9E2498AC63004BEBFD /* uplink.mp3 in Resources */,
+				10F20DAE2498AC63004BEBFD /* EditModeView.xib in Resources */,
+				10F20D9D2498AC63004BEBFD /* cloudy.mp3 in Resources */,
+				10F20DAA2498AC63004BEBFD /* EncodeDataView.xib in Resources */,
+				10F20D442498AB9C004BEBFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		013650DA01B1E6895506F6F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-J.MakingFilm/Pods-J.MakingFilm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-J.MakingFilm/Pods-J.MakingFilm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-J.MakingFilm/Pods-J.MakingFilm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7B228DB53DDA3E6306DF52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-J.MakingFilm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10F20D352498AB9C004BEBFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F20DC92498B4D4004BEBFD /* VideoEditorViewController.swift in Sources */,
+				10F20DC82498B4C9004BEBFD /* PickerViewController.swift in Sources */,
+				10F20DBB2498AC63004BEBFD /* VideoUtility.swift in Sources */,
+				10F20DB92498AC63004BEBFD /* VideoView.swift in Sources */,
+				10F20DB22498AC63004BEBFD /* VideoFilterUtility.swift in Sources */,
+				10F20DA62498AC63004BEBFD /* VideoManagement.swift in Sources */,
+				10F20D942498AC63004BEBFD /* SAVideoRangeSlider.m in Sources */,
+				10F20D3D2498AB9C004BEBFD /* AppDelegate.swift in Sources */,
+				10F20DA72498AC63004BEBFD /* FilterEffect.swift in Sources */,
+				10F20D952498AC63004BEBFD /* SASliderLeft.m in Sources */,
+				10F20D9B2498AC63004BEBFD /* Knob.swift in Sources */,
+				10F20D912498AC63004BEBFD /* ViewExtension.swift in Sources */,
+				10F20DA22498AC63004BEBFD /* PickerListCell.swift in Sources */,
+				10F20D972498AC63004BEBFD /* SASliderRight.m in Sources */,
+				10F20DAD2498AC63004BEBFD /* EditModeView.swift in Sources */,
+				10F20D992498AC63004BEBFD /* KnobRenderer.swift in Sources */,
+				10F20DB12498AC63004BEBFD /* VideoViewPresenter.swift in Sources */,
+				10F20DB62498AC63004BEBFD /* TitleInputTextField.swift in Sources */,
+				10F20D962498AC63004BEBFD /* SAResizibleBubble.m in Sources */,
+				10F20DB82498AC63004BEBFD /* SelectionView.swift in Sources */,
+				10F20DA82498AC63004BEBFD /* AvassetExtension.swift in Sources */,
+				10F20DC42498AD6D004BEBFD /* Define.swift in Sources */,
+				10F20DAF2498AC63004BEBFD /* VideoEncodingOptions.swift in Sources */,
+				10F20D932498AC63004BEBFD /* OneFingerRotationGestureRecognizer.m in Sources */,
+				10F20DB02498AC63004BEBFD /* EditorHelper.swift in Sources */,
+				10F20D3F2498AB9C004BEBFD /* SceneDelegate.swift in Sources */,
+				10F20DAB2498AC63004BEBFD /* EncodeDataView.swift in Sources */,
+				10F20DB72498AC63004BEBFD /* IndicatorCell.swift in Sources */,
+				10F20DA32498AC63004BEBFD /* SelectorDelegate.swift in Sources */,
+				10F20DA52498AC63004BEBFD /* PickerItemCell.swift in Sources */,
+				10F20DBA2498AC63004BEBFD /* MenuSelectorDelegate.swift in Sources */,
+				10F20DB32498AC63004BEBFD /* TimelineIndicatorCollectionView.swift in Sources */,
+				10F20D9C2498AC63004BEBFD /* RangeSlider.swift in Sources */,
+				10F20D9A2498AC63004BEBFD /* RoundingGestureRecognizer.swift in Sources */,
+				10F20DA92498AC63004BEBFD /* VideoThumbnailCreator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		10F20D422498AB9C004BEBFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10F20D432498AB9C004BEBFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10F20D472498ABA0004BEBFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10F20D482498ABA0004BEBFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10F20D4B2498ABA0004BEBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10F20D4C2498ABA0004BEBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10F20D4E2498ABA0004BEBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3953B198FFD3EAE4DE008053 /* Pods-J.MakingFilm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T65C7T9L22;
+				INFOPLIST_FILE = J.MakingFilm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinyoung.J-MakingFilm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10F20D4F2498ABA0004BEBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6A268CD3B6EE250378A092 /* Pods-J.MakingFilm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T65C7T9L22;
+				INFOPLIST_FILE = J.MakingFilm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinyoung.J-MakingFilm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10F20D342498AB9C004BEBFD /* Build configuration list for PBXProject "J.MakingFilm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10F20D4B2498ABA0004BEBFD /* Debug */,
+				10F20D4C2498ABA0004BEBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10F20D4D2498ABA0004BEBFD /* Build configuration list for PBXNativeTarget "J.MakingFilm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10F20D4E2498ABA0004BEBFD /* Debug */,
+				10F20D4F2498ABA0004BEBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10F20D312498AB9C004BEBFD /* Project object */;
+}

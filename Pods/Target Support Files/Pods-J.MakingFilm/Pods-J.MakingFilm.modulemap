@@ -1,0 +1,6 @@
+framework module Pods_J_MakingFilm {
+  umbrella header "Pods-J.MakingFilm-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EncodeDataView" customModule="MovieMaker" customModuleProvider="target">
+            <connections>
+                <outlet property="dataTitle" destination="yNW-gh-2GP" id="T52-Dj-sPZ"/>
+                <outlet property="deleteButton" destination="MCo-yp-c0D" id="Z2x-L6-owa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editerFxBgmBg" translatesAutoresizingMaskIntoConstraints="NO" id="wxa-K0-Bl7">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="94"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNW-gh-2GP">
+                    <rect key="frame" x="18" y="37.5" width="290" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" name="LightPurple"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-yp-c0D">
+                    <rect key="frame" x="14" y="36" width="20" height="22"/>
+                    <state key="normal" image="editerFxBgmBtnDel"/>
+                    <connections>
+                        <action selector="clickDelete" destination="-1" eventType="touchUpInside" id="vcj-m4-Sxo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yNW-gh-2GP" secondAttribute="trailing" constant="18" id="99U-Wn-zzP"/>
+                <constraint firstItem="yNW-gh-2GP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KR8-5h-VKX"/>
+                <constraint firstAttribute="bottom" secondItem="wxa-K0-Bl7" secondAttribute="bottom" id="MTw-1W-3fb"/>
+                <constraint firstAttribute="trailing" secondItem="wxa-K0-Bl7" secondAttribute="trailing" id="U1N-Eq-Y8R"/>
+                <constraint firstItem="yNW-gh-2GP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="U9A-zS-AdC"/>
+                <constraint firstItem="wxa-K0-Bl7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aqr-TX-70v"/>
+                <constraint firstItem="MCo-yp-c0D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="bhV-6F-nAI"/>
+                <constraint firstItem="wxa-K0-Bl7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="i1q-1b-joY"/>
+                <constraint firstItem="yNW-gh-2GP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="vFM-AN-GXe"/>
+                <constraint firstItem="MCo-yp-c0D" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yU9-s1-nv3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="72.463768115942031" y="378.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="editerFxBgmBg" width="68" height="43.5"/>
+        <image name="editerFxBgmBtnDel" width="19.5" height="19.5"/>
+        <namedColor name="LightPurple">
+            <color red="0.7686274509803922" green="0.58431372549019611" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

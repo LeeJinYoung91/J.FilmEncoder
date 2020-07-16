@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="p2f-Ng-J53" userLabel="EditModeView" customClass="EditModeView" customModule="MovieMaker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editerMenupopupBg" translatesAutoresizingMaskIntoConstraints="NO" id="RGc-tm-pkm">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isd-fr-VZO" userLabel="Main">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc7-DS-OgN" userLabel="CloseButton">
+                            <rect key="frame" x="367" y="28" width="22" height="22.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="editerBtnClose">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="closeEdit" destination="p2f-Ng-J53" eventType="touchUpInside" id="yxH-Ri-dzs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIP-tB-1Yz" userLabel="Cut">
+                            <rect key="frame" x="138.5" y="114.5" width="38.5" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="editerMenupopupBtnCut">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="tryCutOff" destination="p2f-Ng-J53" eventType="touchUpInside" id="WKL-QN-MTd"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영상 잘라내기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyJ-tr-Fbg">
+                            <rect key="frame" x="130.5" y="159.5" width="55" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgT-gg-gTk" userLabel="Delete">
+                            <rect key="frame" x="237" y="115" width="30.5" height="37"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="editerMenupopupBtnDel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="tryDelete" destination="p2f-Ng-J53" eventType="touchUpInside" id="ULf-wU-Tdf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영상 클립 삭제" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZq-JK-IPF">
+                            <rect key="frame" x="223.5" y="159" width="58" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xZq-JK-IPF" firstAttribute="top" secondItem="GgT-gg-gTk" secondAttribute="bottom" constant="7" id="EPY-hZ-dW3"/>
+                        <constraint firstItem="GgT-gg-gTk" firstAttribute="leading" secondItem="Isd-fr-VZO" secondAttribute="centerX" constant="30" id="ERW-G3-ycH"/>
+                        <constraint firstItem="xZq-JK-IPF" firstAttribute="centerX" secondItem="GgT-gg-gTk" secondAttribute="centerX" id="MpI-w6-p7l"/>
+                        <constraint firstItem="gIP-tB-1Yz" firstAttribute="centerY" secondItem="Isd-fr-VZO" secondAttribute="centerY" id="Mwf-go-yq6"/>
+                        <constraint firstItem="KyJ-tr-Fbg" firstAttribute="top" secondItem="gIP-tB-1Yz" secondAttribute="bottom" constant="7" id="Opv-HS-VTI"/>
+                        <constraint firstItem="GgT-gg-gTk" firstAttribute="centerY" secondItem="Isd-fr-VZO" secondAttribute="centerY" id="PFE-9Q-XWk"/>
+                        <constraint firstItem="gIP-tB-1Yz" firstAttribute="trailing" secondItem="Isd-fr-VZO" secondAttribute="centerX" constant="-30" id="Rl7-R9-OMz"/>
+                        <constraint firstAttribute="trailing" secondItem="Cc7-DS-OgN" secondAttribute="trailing" constant="25" id="avx-Ks-UfD"/>
+                        <constraint firstItem="Cc7-DS-OgN" firstAttribute="top" secondItem="Isd-fr-VZO" secondAttribute="top" constant="28" id="cjx-sU-Elq"/>
+                        <constraint firstItem="KyJ-tr-Fbg" firstAttribute="centerX" secondItem="gIP-tB-1Yz" secondAttribute="centerX" id="u4D-HA-ddF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-j9-FXk" userLabel="CutView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIv-YF-49a" userLabel="BackButton">
+                            <rect key="frame" x="20" y="18" width="26.5" height="22"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="editerMenupopupBtnBack">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="locateToMain" destination="p2f-Ng-J53" eventType="touchUpInside" id="Sj3-QC-Ipo"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ec-de-wn2" userLabel="LabelHolder">
+                            <rect key="frame" x="0.0" y="43" width="414" height="58.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잘라내기 종료 지점 설정" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piw-gL-R0j" userLabel="Title">
+                                    <rect key="frame" x="20" y="0.0" width="374" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" name="LightPurple"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I37-pO-Hdl" userLabel="Content">
+                                    <rect key="frame" x="20" y="26" width="374" height="32.5"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="잘라내고자">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="11"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="하는">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="11"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="영역의">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="11"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="종료">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="11"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="지점에">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="11"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="커서를">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="11"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="맞추고">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="11"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="아래">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="11"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="버튼을 눌러 주세요.">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="I37-pO-Hdl" firstAttribute="centerX" secondItem="4ec-de-wn2" secondAttribute="centerX" id="67d-uI-Idd"/>
+                                <constraint firstItem="piw-gL-R0j" firstAttribute="top" secondItem="4ec-de-wn2" secondAttribute="top" id="BxE-Hk-98z"/>
+                                <constraint firstAttribute="bottom" secondItem="I37-pO-Hdl" secondAttribute="bottom" id="FHN-6j-DXD"/>
+                                <constraint firstItem="I37-pO-Hdl" firstAttribute="top" secondItem="piw-gL-R0j" secondAttribute="bottom" constant="8" id="HTp-Lf-Jxa"/>
+                                <constraint firstItem="I37-pO-Hdl" firstAttribute="leading" secondItem="4ec-de-wn2" secondAttribute="leading" constant="20" id="Tv2-ew-zLk"/>
+                                <constraint firstAttribute="trailing" secondItem="piw-gL-R0j" secondAttribute="trailing" constant="20" id="aAk-Bt-5zW"/>
+                                <constraint firstAttribute="trailing" secondItem="I37-pO-Hdl" secondAttribute="trailing" constant="20" id="qVm-CE-RcT"/>
+                                <constraint firstItem="piw-gL-R0j" firstAttribute="leading" secondItem="4ec-de-wn2" secondAttribute="leading" constant="20" id="umu-Fz-atv"/>
+                                <constraint firstItem="piw-gL-R0j" firstAttribute="centerX" secondItem="4ec-de-wn2" secondAttribute="centerX" id="xI1-8t-Wvt"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j5-gP-Xg2" userLabel="ConfirmCutButton">
+                            <rect key="frame" x="178" y="117.5" width="58.5" height="58.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="editerMenupopupBtnCutFinish">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="startCutOff" destination="p2f-Ng-J53" eventType="touchUpInside" id="PbP-L1-3hr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vIv-YF-49a" firstAttribute="leading" secondItem="sHl-j9-FXk" secondAttribute="leading" constant="20" id="3Db-bM-xtc"/>
+                        <constraint firstItem="vIv-YF-49a" firstAttribute="top" secondItem="sHl-j9-FXk" secondAttribute="top" constant="18" id="7g6-3x-HuX"/>
+                        <constraint firstAttribute="trailing" secondItem="4ec-de-wn2" secondAttribute="trailing" id="EsD-uo-8lu"/>
+                        <constraint firstItem="4ec-de-wn2" firstAttribute="leading" secondItem="sHl-j9-FXk" secondAttribute="leading" id="Imf-26-fFA"/>
+                        <constraint firstItem="3j5-gP-Xg2" firstAttribute="centerX" secondItem="sHl-j9-FXk" secondAttribute="centerX" id="Kgb-gh-WGC"/>
+                        <constraint firstItem="4ec-de-wn2" firstAttribute="top" secondItem="sHl-j9-FXk" secondAttribute="top" constant="43" id="SPf-a4-8T7"/>
+                        <constraint firstItem="3j5-gP-Xg2" firstAttribute="top" secondItem="4ec-de-wn2" secondAttribute="bottom" constant="16" id="a0k-tZ-QEM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RGc-tm-pkm" firstAttribute="leading" secondItem="OIp-wy-ya2" secondAttribute="leading" id="83r-Ab-ejV"/>
+                <constraint firstItem="OIp-wy-ya2" firstAttribute="trailing" secondItem="RGc-tm-pkm" secondAttribute="trailing" id="8zE-Ps-GOl"/>
+                <constraint firstItem="OIp-wy-ya2" firstAttribute="bottom" secondItem="RGc-tm-pkm" secondAttribute="bottom" id="Fst-go-ssl"/>
+                <constraint firstItem="OIp-wy-ya2" firstAttribute="bottom" secondItem="Isd-fr-VZO" secondAttribute="bottom" id="KSJ-qc-sLO"/>
+                <constraint firstItem="sHl-j9-FXk" firstAttribute="top" secondItem="p2f-Ng-J53" secondAttribute="top" id="KdL-Eb-lCI"/>
+                <constraint firstItem="Isd-fr-VZO" firstAttribute="top" secondItem="p2f-Ng-J53" secondAttribute="top" id="aW7-Ru-DVc"/>
+                <constraint firstItem="Isd-fr-VZO" firstAttribute="leading" secondItem="OIp-wy-ya2" secondAttribute="leading" id="fDw-Dy-7gM"/>
+                <constraint firstItem="sHl-j9-FXk" firstAttribute="trailing" secondItem="OIp-wy-ya2" secondAttribute="trailing" id="fZ3-E5-IQ8"/>
+                <constraint firstItem="RGc-tm-pkm" firstAttribute="top" secondItem="p2f-Ng-J53" secondAttribute="top" id="m2A-od-r6I"/>
+                <constraint firstItem="sHl-j9-FXk" firstAttribute="leading" secondItem="OIp-wy-ya2" secondAttribute="leading" id="qZY-nS-UEE"/>
+                <constraint firstItem="OIp-wy-ya2" firstAttribute="trailing" secondItem="Isd-fr-VZO" secondAttribute="trailing" id="uu0-1E-jJ0"/>
+                <constraint firstItem="sHl-j9-FXk" firstAttribute="bottom" secondItem="OIp-wy-ya2" secondAttribute="bottom" id="xBX-5C-P9d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="OIp-wy-ya2"/>
+            <connections>
+                <outlet property="cutOffPage" destination="sHl-j9-FXk" id="gRb-ah-f76"/>
+                <outlet property="mainEditPage" destination="Isd-fr-VZO" id="DZO-CH-2uu"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="274.21875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="editerBtnClose" width="22" height="22.5"/>
+        <image name="editerMenupopupBg" width="66" height="128.5"/>
+        <image name="editerMenupopupBtnBack" width="26.5" height="20"/>
+        <image name="editerMenupopupBtnCut" width="38.5" height="38"/>
+        <image name="editerMenupopupBtnCutFinish" width="58.5" height="58.5"/>
+        <image name="editerMenupopupBtnDel" width="30.5" height="37"/>
+        <namedColor name="LightPurple">
+            <color red="0.7686274509803922" green="0.58431372549019611" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
