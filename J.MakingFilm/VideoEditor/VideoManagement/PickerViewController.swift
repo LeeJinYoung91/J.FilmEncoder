@@ -23,6 +23,7 @@ class PickerViewController: UIViewController {
     }
 
     @IBOutlet weak var listTableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
 
     private var recordingFileList = [String]()
     private var videoAssetList = [PHAsset]()

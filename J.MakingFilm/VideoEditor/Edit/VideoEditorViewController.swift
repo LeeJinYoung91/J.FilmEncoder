@@ -198,6 +198,10 @@ class VideoEditorViewController: UIViewController {
     }
 
     override func viewWillDisappear(_ animated: Bool) {
+        saveCurrentWorkInfo()
+    }
+    
+    private func saveCurrentWorkInfo() {
         let optionSet = VideoEncodingSettingOptions(key: "TempSaveOption")
         if let information = encodeInformation {
             optionSet.setFilter(information.filter)
@@ -284,6 +288,7 @@ class VideoEditorViewController: UIViewController {
 
             strongSelf.timelineScrollViewWidthConstraints.constant = strongSelf.totalFrameWidth + strongSelf.timelineScrollView.bounds.width
         }
+        saveCurrentWorkInfo()
     }
 
     private func setTimeline(_ asset: AVAsset, index: Int, startPosition: CGFloat) {

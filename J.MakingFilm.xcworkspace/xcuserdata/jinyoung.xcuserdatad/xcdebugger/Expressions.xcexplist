@@ -11,6 +11,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "VideoEditorViewController.saveCurrentWorkInfo():VideoEditorViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "saveAssetsInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #2 in VideoEditorViewController.startEncoding():VideoEditorViewController.swift">
       </ContextState>
    </ContextStates>
