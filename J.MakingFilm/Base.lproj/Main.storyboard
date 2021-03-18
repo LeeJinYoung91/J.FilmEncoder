@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m8q-RU-FLa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m8q-RU-FLa">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -42,7 +43,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-AD-jOI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-AD-jOI">
                                         <rect key="frame" x="36" y="16" width="35" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="취소">
@@ -52,7 +53,7 @@
                                             <action selector="backClick" destination="Mju-ok-4vY" eventType="touchUpInside" id="rWo-7N-hGc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlm-eb-Psy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlm-eb-Psy">
                                         <rect key="frame" x="737" y="16" width="35" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="확인">
@@ -142,6 +143,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="h28-zk-kzO"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sq7-Uq-snx" firstAttribute="bottom" secondItem="h28-zk-kzO" secondAttribute="bottom" id="5N3-HH-Vhk"/>
@@ -154,7 +156,6 @@
                             <constraint firstItem="sq7-Uq-snx" firstAttribute="top" secondItem="zKX-6j-mnX" secondAttribute="bottom" id="pNi-qH-uA1"/>
                             <constraint firstItem="eI4-AD-jOI" firstAttribute="leading" secondItem="h28-zk-kzO" secondAttribute="leading" constant="36" id="xEL-jv-esm"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="h28-zk-kzO"/>
                     </view>
                     <connections>
                         <outlet property="listTableView" destination="sq7-Uq-snx" id="4Ny-Oq-khA"/>
@@ -502,6 +503,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="b9B-Q1-fmB"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="b9B-Q1-fmB" firstAttribute="trailing" secondItem="KNt-HZ-46K" secondAttribute="trailing" id="0pS-5G-oWl"/>
@@ -554,7 +556,6 @@
                             <constraint firstItem="KNt-HZ-46K" firstAttribute="leading" secondItem="jQe-3h-EDu" secondAttribute="trailing" id="z8r-90-dS8"/>
                             <constraint firstItem="GPJ-dq-Y7x" firstAttribute="leading" secondItem="dW1-BO-nWj" secondAttribute="leading" id="zs8-W1-8IU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="b9B-Q1-fmB"/>
                     </view>
                     <navigationItem key="navigationItem" id="5fP-Cj-aOf"/>
                     <connections>

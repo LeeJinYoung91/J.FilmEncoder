@@ -39,8 +39,6 @@ class PickerViewController: UIViewController {
 
     override func viewDidLoad() {
         loadVideoFileList()
-        listTableView.delegate = self
-        listTableView.dataSource = self
     }
 
     @IBAction private func backClick() {
@@ -54,10 +52,11 @@ class PickerViewController: UIViewController {
 
     @IBAction private func confirmClick() {
         var videoInfoList = [VideoEditorViewController.LocalVideo]()
+        
         for selectIndex in selectIndexPath {
-
+            videoInfoList.append(VideoEditorViewController.LocalVideo(path: recordingFileList[selectIndex.row], thumbnail: VideoUtility.shared.getThumbnailImageFromVideoUrl(url: URL(fileURLWithPath: recordingFileList[selectIndex.row]))))
         }
-
+        
         delegate?.selectVideos(videoInfoList)
         navigationController?.popViewController(animated: true)
     }
@@ -88,16 +87,31 @@ class PickerViewController: UIViewController {
         let allVideos = PHAsset.fetchAssets(with: .video, options: fetchOptions)
         for i in 0 ..< allVideos.count {
             videoAssetList.append(allVideos[i])
-        }
-        albumTitleList.append("All Videos")
-        
-        let albumsPhoto:PHFetchResult<PHAssetCollection> = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .albumRegular, options: nil)
-
-        albumsPhoto.enumerateObjects { [weak self] (collection, count, stop) in
-            if let title = collection.localizedTitle, let strongSelf = self {
-                strongSelf.albumTitleList.append(title)
+            
+            PHImageManager.default().requestAVAsset(forVideo: allVideos[i], options: .none) { (asset, videoAudio, nil) in
+                if let video = asset as? AVURLAsset {
+                    self.recordingFileList.append(video.url.path)
+                    if self.recordingFileList.count == self.videoAssetList.count {
+                        DispatchQueue.main.async {
+                            self.listTableView.delegate = self
+                            self.listTableView.dataSource = self
+                        }
+                    }
+                }
             }
+            
         }
+        
+        albumTitleList.append("Album")
+        
+//        let albumsPhoto:PHFetchResult<PHAssetCollection> = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .albumRegular, options: nil)
+//
+//        albumsPhoto.enumerateObjects { [weak self] (collection, count, stop) in
+//            if let title = collection.localizedTitle, let strongSelf = self {
+//                strongSelf.albumTitleList.append(title)
+//
+//            }
+//        }
     }
 
     private func getFullPath(scene: String, fileName: String) -> String {
@@ -124,17 +138,16 @@ extension PickerViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let listCell = tableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath) as! PickerListCell
-//        let newList = sceneRecordList.filter { (val) -> Bool in
-//            return val.key == sceneList[indexPath.section]
-//        }
+        
         listCell.itemType = itemType
         if itemType == .Video {
-//            listCell.sceneTitle = loadVideoFileList[indexPath.section]
-//            listCell.sceneList = newList[sceneList[indexPath.section]]
+            listCell.videoList = recordingFileList
         } else if itemType == .BGM {
             listCell.sceneTitle = "BGM List"
+            listCell.itemType = ItemListType.BGM
         } else {
             listCell.sceneTitle = "Filter List"
+            listCell.itemType = ItemListType.Filter
         }
 
         listCell.cellHeight = listCell.frame.height
@@ -188,6 +201,10 @@ extension PickerViewController: MenuSelectorDelegate {
 
         if !selectIndexPath.contains(indexPath) {
             selectIndexPath.append(indexPath)
+        } else {
+            if let index = selectIndexPath.firstIndex(of: indexPath) {
+                selectIndexPath.remove(at: index)
+            }
         }
         editNavigationBar()
     }

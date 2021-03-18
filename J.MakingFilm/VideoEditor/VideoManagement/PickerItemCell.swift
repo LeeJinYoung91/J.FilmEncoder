@@ -13,7 +13,7 @@ class PickerItemCell: UICollectionViewCell {
     @IBOutlet weak var thumbnail: UIImageView!
     @IBOutlet weak var selectImage: UIImageView!
 
-    var longTapPressed: UILongPressGestureRecognizer?
+    var longTapPressed: UITapGestureRecognizer?
     var filter: VideoFilterUtility.FILTER_TYPE? {
         didSet {
             //TODO: - Set Filter Icon
@@ -39,7 +39,7 @@ class PickerItemCell: UICollectionViewCell {
                     return
                 }
                 thumbnail.image = VideoUtility.shared.getThumbnailImageFromVideoUrl(url: URL(fileURLWithPath: videoPath!))
-                longTapPressed = UILongPressGestureRecognizer(target: self, action: #selector(longTapImage(gesture:)))
+                longTapPressed = UITapGestureRecognizer(target: self, action: #selector(tapImage(gesture:)))
                 addGestureRecognizer(longTapPressed!)
             }
 
@@ -47,8 +47,8 @@ class PickerItemCell: UICollectionViewCell {
         }
     }
 
-    @objc func longTapImage(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == .began {
+    @objc func tapImage(gesture: UITapGestureRecognizer) {
+        if gesture.state == .ended {
             delegate?.longPressAt(self)
         }
     }

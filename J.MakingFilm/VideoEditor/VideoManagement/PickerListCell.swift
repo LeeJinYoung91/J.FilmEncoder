@@ -15,11 +15,9 @@ class PickerListCell: UITableViewCell {
     weak var containerViewController: PickerViewController?
 
     var cellHeight: CGFloat = 0
-    var sceneList: [String]?
+    var videoList: [String]?
     var sceneTitle: String?
     
-    var videoList: [String]?
-
     var itemType: PickerViewController.ItemListType = .Video
     private var selectedVideoPathList = [String]()
     private var selectIndexPath: [IndexPath] = [IndexPath]()
@@ -47,7 +45,7 @@ extension PickerListCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var count = 0
         if itemType == .Video {
-            count = (sceneList?.count == 0 || sceneList == nil) ? 0 : sceneList!.count
+            count = (videoList?.count == 0 || videoList == nil) ? 0 : videoList!.count
         } else if itemType == .Filter {
             count = filterList.count
         } else {
@@ -59,7 +57,7 @@ extension PickerListCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! PickerItemCell
         if itemType == .Video {
-            cell.videoPath = sceneList?[indexPath.row]
+            cell.videoPath = videoList?[indexPath.row]
         } else if itemType == .Filter {
             cell.filter = filterList[indexPath.row]
         } else {
@@ -142,7 +140,6 @@ extension PickerListCell: ItemPickDelegate {
             }
         }
 
-        containerViewController?.clearSelectIndex()
         containerViewController?.startEdit(newIndexPath)
     }
 }

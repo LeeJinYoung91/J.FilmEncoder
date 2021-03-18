@@ -524,7 +524,7 @@ class VideoEditorViewController: UIViewController {
                 assetList.append(video.value)
             }
 
-            VideoUtility.shared.mergedVideo(videos: assetList, saveFolder: "SaveVideo", videoTitle: self.videoTitleInputField.text, successListener: { (pathURL) in
+            VideoUtility.shared.mergedVideo(videos: assetList, saveFolder: "SaveVideo", videoTitle: "", successListener: { (pathURL) in
                 if let audioFilePath = self.encodeInformation?.bgmPath {
                     VideoUtility.shared.mergeAudioWithURL(videoUrl: pathURL, audioPath: audioFilePath, savePath: pathURL) { (success, resultURL) in
                         print("success? : \(success), resultPath: \(resultURL)")
